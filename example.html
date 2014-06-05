@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>2048|Lets Play the puzzel</title>
+<!--<script src = 'sort.js'></script> -->
+<style type="text/css">
+	body{
+		background: #eeeeee;
+		font-size: 2em;
+		font-family: sans-serif;
+		font-weight: bold;
+		color: #a0968c;
+		overflow: hidden; 
+	}
+	header {
+		color:#aaaaaa;
+		text-align: center;
+	}
+	a {
+		text-decoration: none;
+		color:#59514a;
+		border-radius: 5px; 
+		display: block;
+		font-size: 0.8em;
+		padding:0.2em;
+		background: #cccccc;
+		text-align: center;
+		width:200px;
+		margin:auto;
+	}
+	li {
+		display: inline;
+		list-style: none;
+		margin-right: 1em;
+	}
+	section {
+		text-align: center;
+	}
+</style>
+</head>
+<body>
+	<section>
+		<header>2048.js</header>
+	<div id ="__2048__"></div>
+	<ul>
+		<li>Score:</li>
+		<li id ="__2048__score"></li>
+		<li>High score:</li>
+		<li id ="__2048__highscore"></li><br>
+		<li><a href="#" id = "__2048__newgame">New Game</a></li>
+		
+	</ul>
+	</section>
+	
+	<script src ="2048.min.js"></script>
+	<script type="text/javascript">
+	var x = new __2048__({Dimension:400});
+ 	x.init();
+	</script> 
+</body>
+
+</html>
