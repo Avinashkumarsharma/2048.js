@@ -17,12 +17,12 @@ Some of the Features include
 
 
 Version
-----
+======
 
 1.0
 
 Dependencies
------------
+======
 
 2048.js doesn't use any other library all it requires are
 
@@ -30,19 +30,9 @@ Dependencies
 * Browser Supporting Canvas
 * Thats  it!
 
-Installation
---------------
-Include The script before *</body>* tag  and ass this after that
-```javascript
-<script>
-//Declare a game variable 
-var game = new __2048__();
-game.init();
-</script>
-```
 
 HTML ids
---------------
+======
 
 | ids           | Purpose                                      | 
 |:-------------:|:--------------------------------------------:| 
@@ -51,7 +41,17 @@ HTML ids
 |\__2048__highscore|  This will show the high score so far      |
 |\__2048__newgame  | The element to restart a new game          |
 
-##Example
+Instalation
+======
+Just include the 2048.min.js or 2048.js , make a new __2048__ object and call its init method
+```js
+<script>
+var game = new __2048__();
+game.init();
+</script>
+```
+Example
+======
 ```html
 <!DOCTYPE html>
 <html>
@@ -118,8 +118,9 @@ HTML ids
 
 </html>
 ```
-##Options
-```javscript
+Options
+======
+```
 The game variable can take a single options object describing the 2048 Game board which are optional;
    
    Multiplier: This is specifies the multiplier and their correesponding values;
