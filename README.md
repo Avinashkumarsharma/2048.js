@@ -11,20 +11,26 @@ Change the tiles content by specifying all the multipliers
 Autosave and highscore
 
 To make a new Game:
+
 1. include the 2048.min.js or 2048.js at the end of the body;
-2. Declare elements in the Html file with following ids.
-   __2048__ = the main Game , this will contain the Board;
-   __2048__score = this will receive the score updates;
-   __2048__highscore = this will show the high score so far
-   __2048__newgame = The element to restart a new game
+2. Declare elements in the Html file with correct ids.
 3. Declare a Game variable and call its init function.
+...javascript
    var game = new __2048__({{Dimension:400}});
-   game.init();
-   
-   OPTIONS
-   ========
-   The game variable can take a single options object describing the 2048 Game board which are optional;
-   
+   game.init(); 
+...
+
+IDs of Html Elements Required
+...
+__2048__ = the main Game , this will contain the Board.
+__2048__score = this will receive the score updates.
+__2048__highscore = this will show the high score so far.
+__2048__newgame = The element to restart a new game.
+
+
+OPTIONS 
+The game variable can take a single options object describing the 2048 Game board which are optional;
+...   
    Multiplier: This is specifies the multiplier and their correesponding values;
    example: {Multiplier:
               2: '2', 
@@ -63,7 +69,7 @@ To make a new Game:
     
     Dimension: The size of the Board
     example: {Dimension:400} will make a 400px x 400px Board.
-    
+    ...
     One or more options can be used together.
     example: {Background:#bbada0,Dimension:500 }
     
