@@ -15,7 +15,7 @@ To make a new Game:
 1. include the 2048.min.js or 2048.js at the end of the body;
 2. Declare elements in the Html file with correct ids.
 3. Declare a Game variable and call its init function.
-...javascript
+...
    var game = new __2048__({{Dimension:400}});
    game.init(); 
 ...
@@ -26,7 +26,7 @@ __2048__ = the main Game , this will contain the Board.
 __2048__score = this will receive the score updates.
 __2048__highscore = this will show the high score so far.
 __2048__newgame = The element to restart a new game.
-
+...
 
 OPTIONS 
 The game variable can take a single options object describing the 2048 Game board which are optional;
