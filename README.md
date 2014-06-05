@@ -15,9 +15,9 @@ To make a new Game:
 1. include the 2048.min.js or 2048.js at the end of the body;
 2. Declare elements in the Html file with correct ids.
 3. Declare a Game variable and call its init function.
-...
-   var game = new __2048__({{Dimension:400}});
-   game.init(); 
+4. ...
+var game = new __2048__({{Dimension:400}});
+game.init(); 
 ...
 
 IDs of Html Elements Required
@@ -27,23 +27,23 @@ __2048__score = this will receive the score updates.
 __2048__highscore = this will show the high score so far.
 __2048__newgame = The element to restart a new game.
 ...
-
 OPTIONS 
 The game variable can take a single options object describing the 2048 Game board which are optional;
 ...   
-   Multiplier: This is specifies the multiplier and their correesponding values;
+Multiplier: This is specifies the multiplier and their correesponding values;
    example: {Multiplier:
-              2: '2', 
-							4: '4',
-							8: '8',
-							16: '16',
-							32: '32',
-							64: '64',
-							128: '128',
-							256: '256',
-							512: '512',
-							1024: '1024',
-							2048: '2048'}
+              2: '2',
+	      4: '4',
+	      8: '8',
+	     16: '16',
+	     32: '32',
+	     64: '64',
+	     128: '128',
+	     256: '256',
+	     512: '512',
+	     1024: '1024',
+	     2048: '2048'}
+						
 	 This is the Default;
 	 
 	 Tile: The contains a [Multiplier][Background][Font Color] in order
