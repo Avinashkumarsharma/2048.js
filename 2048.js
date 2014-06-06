@@ -506,7 +506,7 @@ var updatePosition = function(index) {
 				SPAWN = true;
 				this.merge = false;
 				this.digit *= 2;
-				this.content *=2; 
+				this.content = options['Multiplier'][this.digit];  
 				board.splice(index -1, 1);
 			}
 		}
@@ -528,7 +528,7 @@ var updatePosition = function(index) {
 			if(this.merge) {
 				this.merge = false;
 				this.digit *= 2;
-				this.content *=2; 
+				this.content = options['Multiplier'][this.digit];  
 				board.splice(index -1, 1);
 			}
 		}
@@ -550,7 +550,7 @@ var updatePosition = function(index) {
 			if(this.merge) {
 				this.merge = false;
 				this.digit *= 2;
-				this.content *=2; 
+				this.content = options['Multiplier'][this.digit];  
 				board.splice(index -1, 1);
 			}
 		}
@@ -573,7 +573,7 @@ var updatePosition = function(index) {
 			if(this.merge) {
 				this.merge = false;
 				this.digit *= 2;
-				this.content *=2; 
+				this.content = options['Multiplier'][this.digit];  
 				board.splice(index -1, 1);
 			}
 		}
