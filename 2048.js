@@ -222,6 +222,14 @@ var drawTile = function() {
 	var fSize = (60 -((this.content +  '').length-1)*10) * (this.size/107);
 	cx.font = 'normal 800 '+fSize+'px Clear sans, Myriad Pro, sans-serif';
 	var metrics = cx.measureText(this.content);
+	if(fSize < 0) {
+		fSize = fSize * (-1);
+		while(metrics.width > this.size - (10/107) * this.size) {
+			fSize -= 3;
+			cx.font = 'normal 800 '+fSize+'px Clear sans, Myriad Pro, sans-serif';
+			metrics = cx.measureText(this.content);
+		}
+	}
 	_x = x + this.size/2 - metrics.width/2; 
 	_y = y + this.size/2 + 1/3*fSize;
 	cx.fillText(this.content, _x , _y);
@@ -303,7 +311,7 @@ var GameStatus = function (grid) {
 	var L,R,U,D;
 	a = findAvailable(b);
 	for(var i in b) {
-		if(b.digit == 2048)
+		if(b[i].digit == 2048)
 			return -1; 
 	}
 	if(a.length)
