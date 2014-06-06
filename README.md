@@ -1,31 +1,8 @@
 2048.js
-<<<<<<< HEAD
 =======
 
 2048.js is made to implement a customized 2048 puzzel game. This is a canvas implementaion of the game. This js allows
 customization of the board in the 2048 game.
-
-Following are some of the Game features:
-
-Change the size of the Borad;
-Change the tile color and the background;
-Change the tiles content by specifying all the multipliers
-Autosave and highscore
-
-To make a new Game:
-
-
-   
-OPTIONS
-   The game variable can take a single options object describing the 2048 Game board which are optional;
-=======
-=========
-
-2048.js is a HTML5 Based a canvas implementaion of the Puzzel Game 2048
-
-  - Easy installation
-  - Just 9kb
-  - Magic
 
 Some of the Features include
 
@@ -33,6 +10,7 @@ Some of the Features include
 * Highscore so far
 * Customize the board according to need
 * Change the color, size and multiplier value etc.
+* its just 9kb.
 
 
 
@@ -142,7 +120,6 @@ Options
 ======
 ```
 The game variable can take a single options object describing the 2048 Game board which are optional;
->>>>>>> b0f4134c764213bfc1625c8847fde30cbd937799
    
    Multiplier: This is specifies the multiplier and their correesponding values;
    example: {Multiplier:
