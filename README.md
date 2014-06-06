@@ -1,4 +1,5 @@
 2048.js
+<<<<<<< HEAD
 =======
 
 2048.js is made to implement a customized 2048 puzzel game. This is a canvas implementaion of the game. This js allows
@@ -17,6 +18,131 @@ To make a new Game:
    
 OPTIONS
    The game variable can take a single options object describing the 2048 Game board which are optional;
+=======
+=========
+
+2048.js is a HTML5 Based a canvas implementaion of the Puzzel Game 2048
+
+  - Easy installation
+  - Just 9kb
+  - Magic
+
+Some of the Features include
+
+* Autosave
+* Highscore so far
+* Customize the board according to need
+* Change the color, size and multiplier value etc.
+
+
+
+Version
+======
+
+1.0
+
+Dependencies
+======
+
+2048.js doesn't use any other library all it requires are
+
+* HTML5 supported Browser, Prefrebly Chrome or Firefox
+* Browser Supporting Canvas
+* Thats  it!
+
+
+HTML ids
+======
+
+| ids           | Purpose                                      | 
+|:-------------:|:--------------------------------------------:| 
+| \__2048__      | The main Game , this will contain the Board. | 
+| \__2048__score | This will receive the score updates.         |   
+|\__2048__highscore|  This will show the high score so far      |
+|\__2048__newgame  | The element to restart a new game          |
+
+Instalation
+======
+Just include the 2048.min.js or 2048.js , make a new __2048__ object and call its init method
+```js
+<script>
+var game = new __2048__();
+game.init();
+</script>
+```
+Example
+======
+```html
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>2048|Lets Play the puzzel</title>
+<!--<script src = 'sort.js'></script> -->
+<style type="text/css">
+	body{
+		background: #eeeeee;
+		font-size: 2em;
+		font-family: sans-serif;
+		font-weight: bold;
+		color: #a0968c;
+		overflow: hidden; 
+	}
+	header {
+		color:#aaaaaa;
+		text-align: center;
+	}
+	a {
+		text-decoration: none;
+		color:#59514a;
+		border-radius: 5px; 
+		display: block;
+		font-size: 0.8em;
+		padding:0.2em;
+		background: #cccccc;
+		text-align: center;
+		width:200px;
+		margin:auto;
+	}
+	li {
+		display: inline;
+		list-style: none;
+		margin-right: 1em;
+	}
+	section {
+		text-align: center;
+	}
+</style>
+</head>
+<body>
+	<section>
+		<header>2048.js</header>
+	<div id ="__2048__"></div>
+	<ul>
+		<li>Score:</li>
+		<li id ="__2048__score"></li>
+		<li>High score:</li>
+		<li id ="__2048__highscore"></li><br>
+		<li><a href="#" id = "__2048__newgame">New Game</a></li>
+		
+	</ul>
+	</section>
+	
+	<script src ="2048.min.js"></script>
+	<script type="text/javascript">
+	var x = new __2048__({Dimension:400});
+ 	x.init();
+	</script> 
+</body>
+
+</html>
+```
+Options
+======
+```
+The game variable can take a single options object describing the 2048 Game board which are optional;
+>>>>>>> b0f4134c764213bfc1625c8847fde30cbd937799
    
    Multiplier: This is specifies the multiplier and their correesponding values;
    example: {Multiplier:
@@ -59,9 +185,10 @@ OPTIONS
     
     One or more options can be used together.
     example: {Background:#bbada0,Dimension:500 }
-    
-    All options are optional.
-    
-  
-    
-    
+```
+
+
+
+
+
+
