@@ -1,7 +1,7 @@
 2048.js
 =======
 
-2048.js is made to implement a customized 2048 puzzel game. This is a canvas implementaion of the game. This js allows
+2048.js implements a customized 2048 puzzel game. This is a canvas implementaion of the game. This js allows
 customization of the board in the 2048 game.
 
 Some of the Features include
