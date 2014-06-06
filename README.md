@@ -12,6 +12,7 @@ Some of the Features include
 * Change the color, size and multiplier value etc.
 * its just 9kb.
 
+####[Play it!](http://2048.webuda.com/)
 
 
 Version
